@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon server"
+    "start": "nodemon server",
+    "build-dev": "terser app.js -o app.min.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.2.1",
@@ -22,5 +23,8 @@
     "openai": "^4.28.0",
     "socket.io": "^4.7.4",
     "twig": "~0.10.3"
+  },
+  "devDependencies": {
+    "terser": "^5.29.1"
   }
 }
